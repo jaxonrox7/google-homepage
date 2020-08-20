@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+header{
+    height: 25px;
+    background-color: brown;
+    display: flex;
+    justify-items: end;
+}
+#search-logo .logo-img{ 
+    background-color: rgb(255, 255, 255);
+    margin: 20vh 0 0 0;
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+
+}
+#google-logo {
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+.mag-glass{
+    position: relative;
+    left:39px;
+    top: .5rem;
+    width: 18px;
+    height: 18px;
+    border: 2px solid grey;
+    background: rgb(255, 255, 255);
+    border-radius: 50%
+    
+
+}
+#line{
+    position: relative;
+    left: 40px;
+    top: 1.5rem;
+    width: 2px;
+    height: 15px;
+    background-color: grey;
+    transform: rotate(-45deg);
+}
+#searchbar{
+    height: 44px;
+    width: 45%;
+    display: flex;
+    align-self: flex-end;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    
+}
+#side-box1{
+    position: relative;
+    right: 40px;
+    bottom: .50rem;
+
+    display: flex;
+    justify-items: center;
+    align-self: flex-end;
+    box-shadow: black;
+    
+    
+}
+#mic-img{
+    flex-direction: column;
+    width: 28px;
+    height: 28px;
+}
+.search-bar-comp{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    height: 44px;
+
+}
