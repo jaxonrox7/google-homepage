@@ -2,16 +2,97 @@
     margin: 0;
     padding: 0;
 } 
+body{
+    font-family: roboto, arial, sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 67px 215px 104px;
+    flex-direction: column;
+    grid-template-areas: "header"
+                          "image"
+                          "boxes"
+                          "footer";
 
-header{
-    height: 25px;
-    background-color: brown;
+}
+.header {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: "right left";
+}
+.header .right-head{
     display: flex;
-    justify-items: end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.link{
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+ .link:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.75);
+}
+#google-apps{
+    display: grid;
+    grid-template-rows: repeat(3, 9px);
+    grid-template-columns: repeat(3, 9px);
+    margin: 1.25rem 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+   
+}
+#google-apps:hover{
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.075);
+}
+.google-apps{
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.gmail{
+    margin: 1.25rem 1rem;
+}
+.images{
+    margin: 1.25rem 1rem;
+}
+.sign-div{
+    background-color: blue;
+    width: 4rem;
+    height: 1.5rem;
+    margin: 1.25rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#sign-in{
+    color: white;
+    font-size: 14px;
+}
+#left-head{
+    display: flex;
+
+}
+.about{
+    margin: 1.23rem 1rem;
+}
+.store{
+    margin: 1.25rem 1rem;
+}
+}
+#right-head{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+   
 }
 #search-logo .logo-img{ 
     background-color: rgb(255, 255, 255);
-    margin: 20vh 0 0 0;
+    margin: 75px 0 0 0;
     display:flex;
     flex-direction: column;
     width: 100vw;
@@ -25,10 +106,10 @@ header{
 }
 .mag-glass{
     position: relative;
-    left:39px;
-    top: .5rem;
-    width: 18px;
-    height: 18px;
+    left:37px;
+    top: .85rem;
+    width: 10px;
+    height: 10px;
     border: 2px solid grey;
     background: rgb(255, 255, 255);
     border-radius: 50%
@@ -37,22 +118,25 @@ header{
 }
 #line{
     position: relative;
-    left: 40px;
-    top: 1.5rem;
+    left: 38px;
+    top: 1.45rem;
     width: 2px;
-    height: 15px;
+    height: 13px;
     background-color: grey;
     transform: rotate(-45deg);
 }
 #searchbar{
     height: 44px;
-    width: 45%;
+    width: 400px;
     display: flex;
     align-self: flex-end;
     border: 0;
     border-radius: 30px;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-    
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    font-size: 1.75rem;
+    color: grey;
 }
 #side-box1{
     position: relative;
@@ -78,4 +162,56 @@ header{
     align-content: flex-end;
     height: 44px;
 
+}
+/*buttons*/
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button{
+    margin: 2rem 1rem;
+    width: 9rem;
+    height: 2.5rem;
+    color: rgba(0, 0, 0, 0.596);
+    border-radius: 10x;
+    border-color: white;
+    box-shadow: 0px 0px white;
+}
+button:hover{
+    color: black;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    grid-area: footer;
+    align-items: flex-end;
+}
+#advert{
+    margin: 0px 1rem;
+}
+#business{
+    margin: 0px 1rem;
+}
+#how{
+    margin: 0px 1rem;
+}
+#privacy{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+#terms{
+    margin: 0px 1rem;
+}
+#settings{
+    margin: 0px 1rem;
+}
+.foot-box{
+    background-color: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
 }
