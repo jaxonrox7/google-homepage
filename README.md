@@ -1,0 +1,1 @@
+This project is a copy of a google homepage. I used grid and flexbox to make it look right. This is my first project from the Odin project. 
